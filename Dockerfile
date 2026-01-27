@@ -1,7 +1,7 @@
 FROM node:20
 
 # default branch
-ARG BRANCH=3.3
+ARG BRANCH=4.3
 ENV BRANCH=$BRANCH
 
 RUN apt-get update && \
