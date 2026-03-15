@@ -34,5 +34,4 @@ jobs:
           push: true
           tags: ghcr.io/abcdesktopio/oc.filer:${{ env.imagetag }}
           build-args: |
-            ABCDESKTOP_LOCALACCOUNT_DIR=/etc/localaccount
             BRANCH=${{ env.imagetag }}
