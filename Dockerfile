@@ -1,4 +1,4 @@
-FROM node:20
+FROM node
 
 # default branch
 ARG BRANCH=4.3
