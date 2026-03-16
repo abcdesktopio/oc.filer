@@ -26,6 +26,7 @@ RUN mkdir -p /var/log/desktop /var/run/desktop /composer/run
 # set build date
 RUN date > /etc/build.date
 
+# copy docker-entrypoint.sh
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 WORKDIR /
 CMD /docker-entrypoint.sh
