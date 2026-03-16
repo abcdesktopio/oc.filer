@@ -29,6 +29,7 @@ RUN date > /etc/build.date
 # copy docker-entrypoint.sh
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 WORKDIR /
+# start the docker-entrypoint.sh bash script
 CMD /docker-entrypoint.sh
 
 
