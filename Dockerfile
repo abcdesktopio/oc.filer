@@ -1,7 +1,7 @@
 FROM node
 
 # default branch
-ARG BRANCH=4.3
+ARG BRANCH=4.4
 ENV BRANCH=$BRANCH
 
 RUN apt-get update && \
@@ -18,7 +18,7 @@ RUN mkdir -p /composer/node/file-service && \
 
 # Add nodejs file-service and dep
 WORKDIR /composer/node/file-service
-RUN npm install --save-prod 
+RUN npm install --omit=dev 
 
 # create default log pid directory
 RUN mkdir -p /var/log/desktop /var/run/desktop /composer/run
